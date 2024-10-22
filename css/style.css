@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #397524 #DFE9EB;
+}*/
+
+.guide {
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: #5b798e;
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 0px 0px 20px 0px #5b798e;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    /* Initially hidden */
+    background-color: #5b798e;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Remove underline from link */
+    z-index: 1000;
+}
+
+#scrollToTopBtn i {
+    font-size: 24px;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+}
+
+
+*::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #5b798e;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #6d8291;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #5b798e;
+}
+
+.sec3-icon {
+    color: #5b798e;
+}
+
+.iphone img {
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* div{
+    animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+  } */
+
+a span {
+    color: #5b798e;
+    font-weight: bold;
+}
+
+.all-cat:active,
+.all-cat:focus,
+.all-cat:hover {
+    background-color: white;
+    color: #000;
+}
+
+.fa-cart-shopping {
+    font-size: 2rem;
+    color: #212529;
+}
+
+.fa-heart {
+    color: #212529;
+    font-size: 2rem;
+
+}
+
+#row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+#categ {
+    color: #212529;
+    border-color: #d9d9d9;
+}
+
+#categ:hover {
+    background-color: white;
+    color: #212529;
+}
+
+#search {
+    background-color: #5b798e;
+}
+
+#cart-number,
+#wish-number {
+    height: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    width: 20px;
+    background-color: #5b798e;
+}
+
+#wish-number {
+    position: absolute;
+    translate: 25px 5px;
+}
+
+#cart-number {
+    position: absolute;
+    translate: 28px 5px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+nav {
+    background-color: #5b798e;
+}
+
+.bars {
+
+    margin: 5px;
+    padding: 5px;
+}
+
+.first {
+    background: linear-gradient(to top, #5b798e43 0%, white 100%);
+}
+
+#new-era {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.shop-btn {
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #5b798e;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.shop-btn:hover {
+    border: #5b798e 3px solid;
+    background-color: transparent;
+    color: #5b798e;
+}
+
+.box {
+    box-shadow: 0px 0px 16px -2px #00000033;
+}
+
+.box svg {
+    color: #5b798e;
+    font-size: 2rem;
+}
+
+.slides {
+
+    box-shadow: 0px 0px 16px -2px #00000033;
+}
+
+.res-btn {
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+}
+
+.pg-dd *:hover {
+    background-color: #678091;
+}
+
+.res a:hover {
+    background-color: #678091;
+}
+
+.carousel-control-prev-icon {
+    background-color: #000;
+}
+
+.s-btns {
+    right: 30px;
+    top: 4px;
+}
+
+.img-holder {
+    height: 337px;
+}
+
+.slides {
+    height: fit-content;
+}
+
+.card,
+.card-7,
+.card-2 {
+    transition: all 0.2s;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    border-right: solid 1px;
+    border-radius: 0;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 16px -2px #00000033;
+    transform: scale(1.005);
+
+}
+
+.card-7:hover {
+    box-shadow: 0px 0px 16px -2px #00000033;
+    transform: scale(1.005);
+
+}
+
+.card-2:hover {
+    box-shadow: 0px 0px 16px -2px #00000033;
+    transform: scale(1.005);
+
+}
+
+.card-2::before {
+    position: absolute;
+    box-shadow: 0px 0px 16px -2px #c90000a2;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    content: '33%';
+    background-color: #f33;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: smaller;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.wish-card {
+    position: absolute;
+    box-shadow: 0px 0px 16px -2px #00000079;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    opacity: 0;
+    transition: all 0.3s;
+    border: none;
+}
+
+.wish-card:hover {
+    opacity: 1;
+}
+
+.card::before {
+    position: absolute;
+    box-shadow: 0px 0px 16px -2px #c90000a2;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    content: '25%';
+    background-color: #f33;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: smaller;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.card-7::before {
+    position: absolute;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    content: 'NEW';
+    background-color: #5b798e;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.add-cart {
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    opacity: 0;
+
+}
+
+.add-cart:hover {
+    background-color: #5b798e;
+    opacity: 1;
+
+}
+
+.img-con {
+    height: 200px;
+    display: flex;
+    align-items: end;
+}
+
+.p-cat {
+    width: fit-content;
+    color: white;
+    background-color: #5b798e;
+}
+
+.p-cat:hover {
+    background-color: transparent;
+    color: #5b798e;
+    border: solid #5b798e 2px
+}
+
+/* fifth section */
+.fifth {
+    background-image: url(../media/slide-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mac-shadow {
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 550px) {
+    .indi {
+        display: none;
+        /* Hide the laptop div when screen width is 420px or less */
+    }
+}
+
+/* end fifth section */
+/* six section */
+
+.card-1::before {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+    content: 'NEW';
+    background-color: #5b798e;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.card-1 {
+    position: relative;
+    border: none;
+    border-radius: 0;
+}
+
+/* end six section */
+
+
+
+/* seven section */
+.scrl {
+    position: relative;
+}
+
+.seven {
+    background: linear-gradient(to bottom, #5b798edc 0%, #5b798e62 50%, #5b798edc 100%);
+
+}
+
+.scroll-sec {
+    width: 300px;
+    overflow-x: auto;
+    white-space: nowrap;
+
+}
+
+.scroll-cards {
+    scroll-behavior: smooth;
+}
+
+.scroll-sec::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow-l {
+    position: absolute;
+    top: calc(50%);
+    left: 5px;
+    translate: -55px;
+}
+
+.arrow-l button {
+
+    border: solid #5b798e 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8f9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.arrow-r button {
+
+    border: solid #5b798e 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8f9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    translate: 28px;
+}
+
+.arrow-r {
+    position: absolute;
+    transition: all 0.3s ease-out;
+    right: -15px;
+    border-radius: 50%;
+    top: calc(50%);
+}
+
+.arrow-l svg {
+    color: #5b798e;
+}
+
+.arrow-r svg {
+    color: #5b798e;
+}
+
+.s-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.s-card:hover {
+    transform: scale(1.1);
+}
+
+/* end seven section */
+
+
+
+
+
+
+
+/* start 8 section */
+.infinity .container {
+    position: relative;
+}
+
+.brands::-webkit-scrollbar {
+    display: none;
+}
+
+.gred {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #ffffffdc 0%, #5b798e00 50%, #ffffffdc 100%);
+
+}
+
+/* end 8 section */
+
+
+
+
+
+
+/* start 9 section */
+.icon-mes svg {
+    color: #5b798e;
+    font-size: 60px;
+}
+
+.color {
+    color: #5b798e;
+}
+
+.social-btn {
+    width: fit-content;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-color: #5b798e;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.social-btn:hover {
+    opacity: 0.75;
+}
+
+/* end 9 section */
